@@ -41,7 +41,7 @@ export function Formulario() {
         initialValues={post}
         validationSchema = {yup.object({
           title: yup.string().min(3,"minimo 3 caracteres").max(30,"maximo 30 caracteres").required("Campo requerido"),
-          body: yup.string().min(3,"minimo 3 caracteres").max(60,"maximo 60 caracteres").required("Campo requerido"),
+          body: yup.string().min(3,"minimo 3 caracteres").max(200,"maximo 200 caracteres").required("Campo requerido"),
           file:yup.mixed().required("imagen requeridas"),
          })}
         onSubmit={async (values, actions) => {

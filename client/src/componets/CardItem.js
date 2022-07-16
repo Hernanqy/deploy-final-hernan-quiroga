@@ -2,7 +2,7 @@
 import {usePosts} from "../context/postContext"
 import  toast  from "react-hot-toast";
 import { useNavigate,  } from "react-router-dom";
-import{Link} from "react-router-dom"
+
 
 
 export function CardItem({post}) {
@@ -72,11 +72,7 @@ export function CardItem({post}) {
             >
               Editar
             </button>
-            <Link to="/SignUp" className='flex justify-center' ><button className="m-3 p-2 h-9 w-auto rounded-md transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
-  Buscar por titulo
-</button>
-         </Link>
-              
+             
           
           </div>
         </div>
